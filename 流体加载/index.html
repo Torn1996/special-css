@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>流体加载</title>
+  </head>
+
+  <body>
+    <section>
+      <svg>
+        <filter id="gooey">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+          <feColorMatrix
+            values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10"
+          ></feColorMatrix>
+        </filter>
+      </svg>
+      <div class="loader" id="app">
+        <span :style="{'--i': n}" v-for="n in 8"></span>
+        <span class="rotate" :style="{'--j': n}" v-for="n in 5"></span>
+      </div>
+    </section>
+  </body>
+</html>
+<script>
+  new Vue({
+    el: '#app',
+  })
+</script>
+<style>
+  @import './index.css';
+</style>
