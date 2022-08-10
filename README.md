@@ -1,6 +1,7 @@
 # special-css
 
 `使用css编写的一些动画特效`
+注：本项目部分案例来源于：https://www.bilibili.com/video/BV1bS4y177dx?p=1
 
 ## 目录
 
