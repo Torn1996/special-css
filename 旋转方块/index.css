@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+.loader div:nth-child(1) {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 200px;
+  height: 200px;
+  border: 20px solid #262626;
+  transform-style: preserve-3d;
+  animation: animate 2s linear infinite;
+  animation-delay: -0.2s;
+}
+.loader div:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 20px;
+  height: 100px;
+  background: yellow;
+}
+.loader div:nth-child(1)::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 20px;
+  height: 100px;
+  background: yellow;
+}
+@keyframes animate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.loader div:nth-child(2) {
+  position: absolute;
+  top: 12.5%;
+  left: 12.5%;
+  width: 300px;
+  height: 300px;
+  border: 20px solid #262626;
+  transform-style: preserve-3d;
+  animation: animate 2s linear infinite;
+  animation-delay: -0.4s;
+}
+.loader div:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  width: 20px;
+  height: 150px;
+  background: yellow;
+}
+.loader div:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 20px;
+  height: 150px;
+  background: yellow;
+}
+.loader div:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  border: 20px solid #262626;
+  transform-style: preserve-3d;
+  animation: animate 2s linear infinite;
+  animation-delay: -0.6s;
+}
+.loader div:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 20px;
+  height: 200px;
+  background: yellow;
+}
+.loader div:nth-child(3)::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 20px;
+  height: 200px;
+  background: yellow;
+}
