@@ -1,0 +1,32 @@
+body {
+  background: #262626;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 4px;
+  overflow: hidden;
+}
+
+.container div {
+  width: 300px;
+  height: 3px;
+  background: blue;
+  animation: animate 2s alternate infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translateX(-300px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
