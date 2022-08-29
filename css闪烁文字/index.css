@@ -1,0 +1,82 @@
+body {
+  background: #262626;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 60px;
+}
+.container span {
+  font-size: 60px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: #d8d7d8c3;
+  animation: animate 1s linear infinite;
+}
+@keyframes animate {
+  0% {
+    color: #fff900;
+    box-shadow: none;
+  }
+  18% {
+    color: #fff900;
+    box-shadow: none;
+  }
+  20% {
+    color: #fff900;
+  }
+  30% {
+    color: #484848;
+    box-shadow: none;
+  }
+  35% {
+    color: #fff900;
+  }
+  70% {
+    color: #484848;
+    box-shadow: none;
+  }
+  85% {
+    color: #fff900;
+  }
+  90% {
+    color: #484848;
+    box-shadow: none;
+  }
+  100% {
+    color: #484848;
+    box-shadow: none;
+  }
+}
+.container span:nth-child(1) {
+  animation-delay: 0s;
+}
+.container span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.container span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.container span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.container span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.container span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.container span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.container span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.container span:nth-child(9) {
+  animation-delay: 0.8s;
+}
